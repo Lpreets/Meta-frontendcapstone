@@ -1,1 +1,1 @@
-Final project of the Meta course for Front-End, done in react.
+Final project of the Meta course for Front-End Developer, done in React.

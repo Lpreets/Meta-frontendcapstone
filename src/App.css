@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+.Home {
+  margin: 1.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* This is the Navigation section */
+
+nav {
+  margin-bottom: 2.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+.Nav-Links {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* This is the Hero section */
+
+.Grid-Hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem;
+  align-items: center;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: rgb(73, 94, 87);
+}
+
+.Grid-Hero h1 {
+  font-size: 5rem;
+  color: rgb(244, 205, 20) ;
+}
+
+.Grid-Hero h2 {
+  font-size: 3rem;
+}
+
+.Grid-Hero p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.Grid-Hero button {
+  font-size: 1.5rem;
+  background-color: rgb(244, 205, 20);
+  border-style: solid;
+  border-width: 0.2rem;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Hero-Button-Link {
+  text-decoration: none;
+  color: black;
+}
+
+.Grid-Hero button:hover {
+  border-color: white;
+}
+
+.Grid-Hero .Hero-Img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+  border-style: solid;
+  border-radius: 5rem;
+}
+
+/* This is the Booking section */
+
+.BookingForm fieldset {
+  display: grid;
+  background-color: rgb(73, 94, 87);
+  grid-template-columns: 1fr 1fr;
+  grid-column-start: center;
+  gap: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.BookingForm-Submit {
+  font-size: 1.5rem;
+  background-color: rgb(244, 205, 20);
+  border-style: solid;
+  border-width: 0.2rem;
+  border-radius: 1.5rem;
+  padding: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.BookingForm-Submit:hover {
+  border-color: white;
 }
+
+/* This is the About section */
+
+.Grid-About {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+.About-Img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.About-Summary {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.Grid-About h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.About-Summary h2 {
+  font-size: 3rem;
+}
+
+.About-Summary p {
+  font-size: 2rem;
+}
+
