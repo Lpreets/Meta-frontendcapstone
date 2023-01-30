@@ -34,9 +34,11 @@ const BookingForm = ({ availableTimes, submitForm }) => {
             <label htmlFor="time">Time</label>
             <select name='time' value={time} onChange={(e) => setTime(e.target.value)} required>
                 {
-                    availableTimes.times.map((time, index) => {
-                        return <option value={time} key={index}>{ time }</option>
-                    })
+                  availableTimes && availableTimes.times
+                  ? availableTimes.times.map((time, index) => {
+                      return <option value={time} key={index}>{ time }</option>
+                  })
+                  : null
                 }
             </select>
         </div>

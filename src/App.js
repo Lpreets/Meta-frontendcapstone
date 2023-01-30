@@ -32,7 +32,7 @@ const App = () => {
     };
   };
 
-  const availableTimes = useReducer(reduced, initializeTimes);
+  const availableTimes = useReducer(reduced, initializeTimes); 
 
   return (
     <div className ="App">
@@ -42,7 +42,7 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/components/bookingpage" element={<BookingPage availableTimes={availableTimes} submitForm={submitForm} />} />
+          <Route path="/components/bookingpage" element={<BookingPage availableTimes={availableTimes} submitForm={submitForm} />} /> 
           <Route path="/components/confirmedbooking" element={<ConfirmedBooking />} />
         </Routes>
       </main>
