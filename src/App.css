@@ -1,5 +1,11 @@
-.Home {
-  margin: 1.5rem;
+:root {
+  --color-primarybg:rgb(73, 94, 87);
+  --color-primarytext:rgb(244, 205, 20);
+  --color-buttons:rgb(244, 205, 20);
+  --color-secondaryp:rbg(238, 153, 114);
+  --color-secondarpl:rbg(251, 218, 187);
+  --color-hightlightlight:rgb(237, 239, 238);
+  --color-hightlightdark:rbg(51, 51, 51);
 }
 
 /* This is the Navigation section */
@@ -14,48 +20,59 @@ nav ul {
   flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
+  margin-top: 3rem;
 }
 
 .Nav-Links {
-  color: black;
-  font-size: 2rem;
+  color:black;
+  font-size: 16pt;
+  font-family: "Karla", sans-serif;
   text-decoration: none;
 }
+
+.Nav-Links:hover {
+  border: outset;
+}
+
 
 /* This is the Hero section */
 
 .Grid-Hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: rem;
   align-items: center;
   text-align: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  background-color: rgb(73, 94, 87);
+  background-color: var(--color-primarybg);
 }
 
 .Grid-Hero h1 {
-  font-size: 5rem;
-  color: rgb(244, 205, 20) ;
+  font-size: 64pt;
+  font-family: "Markazi Text", serif;
+  color: var(--color-primarytext);
 }
 
 .Grid-Hero h2 {
-  font-size: 3rem;
+  font-size: 40pt;
+  font-family: "Markazi Text", serif;
+  color: white;
 }
 
 .Grid-Hero p {
-  font-size: 1.5rem;
+  font-size: 18pt;
+  font-family: "Markazi Text", serif;
+  color: white;
+  line-height: 1.5;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
 .Grid-Hero button {
-  font-size: 1.5rem;
-  background-color: rgb(244, 205, 20);
+  font-size: 18pt;
+  font-family: "Markazi Text", serif;
+  background-color: var(--color-buttons);
   border-style: solid;
   border-width: 0.2rem;
-  border-radius: 1.5rem;
+  border-radius: 16px;
   padding: 1rem;
   margin-bottom: 2rem;
 }
@@ -75,36 +92,146 @@ nav ul {
   object-fit: cover;
   margin: auto;
   border-style: solid;
-  border-radius: 5rem;
+  border-radius: 16px;
+}
+
+/* This is the Specials section */
+
+.Specials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.Special {
+  background-color: var(--color-hightlightlight);
+  border: outset;
+}
+
+.Special-Img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Special h2 {
+  font-size: 18pt;
+  font-family: "Karla bold", sans-serif;
+}
+
+.Special p {
+  font-size: 16pt;
+  font-family: "Karla", sans-serif;
+  line-height: 1.5;
 }
 
 /* This is the Booking section */
 
-.BookingForm fieldset {
+.Form {
   display: grid;
-  background-color: rgb(73, 94, 87);
-  grid-template-columns: 1fr 1fr;
-  grid-column-start: center;
-  gap: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
   text-align: center;
-  font-size: 1.5rem;
+  width: 50%;
+  background-color: var(--color-hightlightlight);
+  padding: 2rem;
+  border-style: outset;
+  border-radius: 16pt;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  }
+
+.Form-Tables {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  }
+
+.Form-Tables label {
+  font-size: 18pt;
+  font-family: "Markazi Text", serif;
+  color: black;
 }
 
-.BookingForm-Submit {
-  font-size: 1.5rem;
-  background-color: rgb(244, 205, 20);
+.Form h1 {
+  font-size: 18pt;
+  font-family: "Markazi Text", serif;
+}
+
+.Form-Tables input[type="date"],
+.Form-Tables input[type="text"],
+.Form-Tables input[type="number"],
+.Form-Tables select {
+  font-size: 18pt;
+  font-family: "Markazi Text", serif;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-top: .5rem;
+ }
+
+.Form-Tables input[type="date"],
+.Form-Tables input[type="text"]:focus,
+.Form-Tables input[type="number"]:focus,
+.Form-Tables select:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.Booking-Button {
+  font-size: 18pt;
+  font-family: "Markazi Text", serif;
+  background-color: var(--color-buttons);
+  color:black;
   border-style: solid;
   border-width: 0.2rem;
-  border-radius: 1.5rem;
+  border-radius: 16pt;
   padding: 1rem;
 }
 
-.BookingForm-Submit:hover {
+.Booking-Button:hover {
   border-color: white;
+}
+
+/* This is the Testimonials section */
+
+.Testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.Testimonial {
+  background-color: var(--color-hightlightlight);
+  border: outset;
+}
+
+.Testimonial-Img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Testimonial h2 {
+  font-size: 18pt;
+  font-family: "Karla bold", sans-serif;
+}
+
+.Testimonial p {
+  font-size: 16pt;
+  font-family: "Karla", sans-serif;
+  line-height: 1.5;
 }
 
 /* This is the About section */
@@ -115,9 +242,7 @@ nav ul {
   gap: 1rem;
   align-items: center;
   text-align: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-
+  background-color: var(--color-primarybg);
 }
 
 .About-Img {
@@ -132,15 +257,39 @@ nav ul {
 }
 
 .Grid-About h1 {
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 40pt;
+  font-family: "Markazi Text", serif;
+  color: var(--color-primarytext);
 }
 
 .About-Summary h2 {
-  font-size: 3rem;
+  font-size: 40pt;
+  font-family: "Markazi Text", serif;
 }
 
 .About-Summary p {
-  font-size: 2rem;
+  font-size: 18pt;
+  font-family: "Markazi Text", serif;
+  margin-bottom: 5rem;
 }
 
+/* This is the Footer section */
+
+.Footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: solid;
+  border-color: black;
+}
+
+.Footer-Ul {
+  font-size: 16pt;
+  list-style: none;
+}
+
+.Footer-Links {
+  font-family: "Karla", sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+  color: black;
+}

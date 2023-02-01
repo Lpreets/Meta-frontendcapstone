@@ -13,13 +13,13 @@ const Nav = () => {
               <li>
                 <Link to="/" className="Nav-Links" alt="Link to homepage">
                   <img src={HomeLogo} alt="Home Logo"/>
-                   Home
+                  Home
                 </Link>
               </li>
               <li>
                 <a href="#Specials" className="Nav-Links" alt="Link to specials">
                   <img src={DishIcon} alt="Dish Logo"/>
-                   Specials
+                  Specials
                 </a>
               </li>
               <li>

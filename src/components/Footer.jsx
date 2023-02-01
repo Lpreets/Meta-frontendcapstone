@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Logo from '../assets/logo-icons/Logo.svg';
 
 const Footer = () => {
   return (
     <footer className="Footer" id="Footer" alt="Footer">
-      <ul>
+      <img src={Logo} alt="Little Lemon logo" />
+      <ul className="Footer-Ul"> Navigation
         <li>
           <Link to="/" className="Footer-Links" alt="Link to Homepage">
             Home
@@ -30,6 +32,11 @@ const Footer = () => {
             About Us
           </a>
         </li>
+      </ul>
+      <ul className="Footer-Ul"> Contact
+        <li>Adress: Lorem ipsum dolor sit amet</li>
+        <li>Email: Lorem ipsum dolor sit amet</li>
+        <li>Phone: Lorem ipsum dolor sit amet</li>
       </ul>
     </footer>
   );

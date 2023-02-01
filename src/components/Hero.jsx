@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="Hero" id="Hero" alt="Hero section with button to book table">
       <div className="Grid-Hero">
-        <hero>
+        <div>
           <h1>Little Lemon</h1>
           <h2>Chigaco</h2>
           <br/>
@@ -21,10 +21,10 @@ const Hero = () => {
               Book Table
             </a>
           </button>
-        </hero>
-        <hero>
+        </div>
+        <div>
           <img src={MandA} className="Hero-Img" alt="Mario and Adrian, chefs"/>
-        </hero>
+        </div>
       </div>
     </section>
   );

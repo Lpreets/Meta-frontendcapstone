@@ -21,8 +21,8 @@ const App = () => {
 
   const reduced = (state, action) => {
     const newBookingDate = action.setBookingDate;
-    const newTime = fetchAPI(newBookingDate);
-    return { times: [...newTime] };
+    const newTimes = fetchAPI(newBookingDate);
+    return { times: [...newTimes] };
   };
 
   const submitForm = (formData) => {
@@ -42,8 +42,8 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/components/bookingpage" element={<BookingPage availableTimes={availableTimes} submitForm={submitForm} />} /> 
-          <Route path="/components/confirmedbooking" element={<ConfirmedBooking />} />
+          <Route path="./components/BookingPage" element={<BookingPage availableTimes={availableTimes} submitForm={submitForm} />} />
+          <Route path="./componenets/ConfirmedBooking" element={<ConfirmedBooking />} />
         </Routes>
       </main>
       <footer>
