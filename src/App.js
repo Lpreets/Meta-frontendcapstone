@@ -19,7 +19,7 @@ const App = () => {
     return times;
   };
 
-  const reduced = (state, action) => {
+  const updateTimes = (state, action) => {
     const newBookingDate = action.setBookingDate;
     const newTimes = fetchAPI(newBookingDate);
     return { times: [...newTimes] };
@@ -32,7 +32,7 @@ const App = () => {
     };
   };
 
-  const availableTimes = useReducer(reduced, initializeTimes); 
+  const availableTimes = useReducer(updateTimes, initializeTimes);
 
   return (
     <div className ="App">

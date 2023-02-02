@@ -5,7 +5,7 @@ const Fetch = () => {
     const [submitAPI, setSubmitAPI] = useState(() => {});
 
     useEffect(() => {
-        fetch("https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js")
+        fetch("./Data.js")
           .then(res => res.text())
           .then(text => {
             const script = document.createElement("script");
