@@ -1,6 +1,6 @@
 {
-  "homepage": "https://lpreets.github.io/meta-fecapstone",
-  "name": "meta-fecapstone",
+  "homepage": "https://lpreets.github.io/meta-fec",
+  "name": "meta-fec",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
