@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
 import Fetch from './lib/Fetch'
 import './App.css'
 import Nav from './components/Nav';
@@ -36,19 +36,21 @@ const App = () => {
 
   return (
     <div className ="App">
-      <header>
-        <Nav />
-      </header>
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="./components/BookingPage" element={<BookingPage availableTimes={availableTimes} submitForm={submitForm} />} />
-          <Route path="./componenets/ConfirmedBooking" element={<ConfirmedBooking />} />
-        </Routes>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Router>
+        <header>
+          <Nav />
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/BookingPage" element={<BookingPage availableTimes={availableTimes} submitForm={submitForm} />} />
+            <Route path="/ConfirmedBooking" element={<ConfirmedBooking />} />
+          </Routes>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </Router>
     </div>
   );
 }
