@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div className ="App">
-      <Router basename="/meta-fec">
+      <Router basename="/">
         <header>
           <Nav />
         </header>
