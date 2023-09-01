@@ -1,1 +1,1 @@
-Final project of the Meta course for Front-End Developer, done in React.
+Final capstone project for Meta Front-End Developer Professional Certificate. Project have been set up with React and Version Control with Github. Wireframes made in Figma for UX/UI. The project also involves Unit Testing, Semantic HTML, Meta OG tags and CSS Styling. Booking system (Form) implemented with validation.
